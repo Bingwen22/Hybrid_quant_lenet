@@ -1,0 +1,18 @@
+2024-10-31 22:59:21,317 - INFO - 本次训练量化参数：
+Layer #0: Weights and Activations are quantized to 8-bit
+Layer #1: Weights and Activations are quantized to 8-bit
+Layer #2: Weights and Activations are quantized to 8-bit
+Layer #3: Weights and Activations are quantized to 8-bit
+Layer #4: Weights and Activations are quantized to 8-bit
+
+2024-10-31 22:59:29,006 - INFO - Epoch 1: Test Accuracy: 15.56%
+2024-10-31 22:59:36,619 - INFO - Epoch 2: Test Accuracy: 40.86%
+2024-10-31 22:59:43,720 - INFO - Epoch 3: Test Accuracy: 47.80%
+2024-10-31 22:59:51,358 - INFO - Epoch 4: Test Accuracy: 72.42%
+2024-10-31 22:59:58,876 - INFO - Epoch 5: Test Accuracy: 82.69%
+2024-10-31 23:00:06,698 - INFO - Epoch 6: Test Accuracy: 87.84%
+2024-10-31 23:00:14,482 - INFO - Epoch 7: Test Accuracy: 91.38%
+2024-10-31 23:00:22,470 - INFO - Epoch 8: Test Accuracy: 93.43%
+2024-10-31 23:00:30,186 - INFO - Epoch 9: Test Accuracy: 94.55%
+2024-10-31 23:00:37,902 - INFO - Epoch 10: Test Accuracy: 95.22%
+2024-10-31 23:00:45,751 - INFO - Epoch 11: Test Accuracy: 95.80%
