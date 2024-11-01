@@ -42,7 +42,7 @@ def test(model):
     return accuracy
 
 
-def mixed_quantization_train(model, quant_cfg, best_model_path):
+def mixed_quantization_train(model, best_model_path):
     optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
     best_acc = 0.0
     for epoch in range(5):
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     model = LeNet_Quant(quant_cfg=quant_cfg).to(device)
     best_model_path = f'./checkpoint/{timestamp}/best_tmp.pth'
 
-    _ = mixed_quantization_train(model, quant_cfg, best_model_path)
+    _ = mixed_quantization_train(model, best_model_path)
 
     while(1):
         best_quant_acc = 0.0
@@ -107,7 +107,7 @@ if __name__ == '__main__':
 
 
             cur_model_path = f'./checkpoint/{timestamp}/{quant_cfg_str}_best.pth'
-            cur_quant_acc = mixed_quantization_train(model, layer_quant_cfg, cur_model_path)
+            cur_quant_acc = mixed_quantization_train(model, cur_model_path)
 
             if best_quant_acc < cur_quant_acc:
                 best_quant_acc = cur_quant_acc
